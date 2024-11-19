@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
--- Date        : Tue Nov 19 16:02:15 2024
+-- Date        : Tue Nov 19 16:51:45 2024
 -- Host        : DonGun running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/dma_PmodAD1_0_2_stub.vhdl

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: digilentinc.com:IP:PmodAD1:1.0
-// IP Revision: 45
+// IP Revision: 52
 
 (* X_CORE_INFO = "PmodAD1_v1_0,Vivado 2024.1.2" *)
 (* CHECK_LICENSE_TYPE = "dma_PmodAD1_0_2,PmodAD1_v1_0,{}" *)

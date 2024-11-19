@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="67" Path="c:/projects/ern24004/projects/pmod_ad1_dma/pmod_ad1_dma.tmp/pmodad1_v1_0_project/PmodAD1_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="bd25999ef75a4add9d748ce743333304"/>
+    <Option Name="Id" Val="e0a8ee269089495f8495ddcb33caf22c"/>
     <Option Name="Part" Val="xc7z007sclg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -108,19 +108,17 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/PMOD_AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/hdl/PmodAD1_v1_0.v">
+      <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/PMOD_AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/src/ad1_spi.v">
         <FileInfo>
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="ipstatic"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/PMOD_AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/src/ad1_spi.v">
+      <File Path="$PPRDIR/../../../../../../Projects/ERN24004/Projects/PMOD_AD1_DMA/ip_repo/ip/Pmods/PmodAD1_v1_0/hdl/PmodAD1_v1_0.v">
         <FileInfo>
           <Attr Name="Library" Val=""/>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="ipstatic"/>

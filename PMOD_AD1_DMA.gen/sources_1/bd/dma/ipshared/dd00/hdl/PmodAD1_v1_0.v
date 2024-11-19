@@ -101,6 +101,7 @@
     reg [9:0] sample_count = 0; // Counter for generated samples
     reg [1:0] state = 0;        // State machine
     reg [31:0] ad1_data =  2'b11;
+    reg [31:0] ad1_data_r;
     // State machine states
     localparam IDLE      = 2'b00;
     localparam GENERATE  = 2'b01;
@@ -192,36 +193,7 @@
         .out7_T(Pmod_out_pin10_t)
     );
 
-	// Add user logic here
-	
-	
-	    
-//    wire drdy;
-
-//    ad1_spi #(
-//        .INCLUDE_DEBUG_INTERFACE(INCLUDE_DEBUG_INTERFACE),
-//        .CLOCKS_PER_BIT(AD1_CLOCKS_PER_BIT),
-//        .CLOCKS_BEFORE_DATA(AD1_CLOCKS_BEFORE_DATA),
-//        .CLOCKS_AFTER_DATA(AD1_CLOCKS_AFTER_DATA),
-//        .CLOCKS_BETWEEN_TRANSACTIONS(AD1_CLOCKS_BETWEEN_TRANSACTIONS)
-//    ) m_ad1_spi (
-//        .clk(m_axis_aclk),
-//        .rst(~m_axis_aresetn),
-//        .cs(ad1_cs),
-//        .sdin0(ad1_sdin0),
-//        .sdin1(ad1_sdin1),
-//        .sclk(ad1_sclk),
-//        .drdy(drdy),
-//        .dout0(ad1_data[15:00]),
-//        .dout1(ad1_data[31:16]),
-//        .led(led)
-//    );
-
-//    always@(posedge m_axis_aclk)
-//        if (drdy == 1)
-//            ad1_data_r <= ad1_data;
-	
-	    // State Machine
+ 
  
  // State Machine
     always @(posedge m_axis_aclk) begin
@@ -243,10 +215,10 @@
 
                 GENERATE: begin
                     if (sample_count < TOTAL_SAMPLES) begin
-                        if (m_axis_tready) begin
+                        if (m_axis_tready & s00_axi_awready ) begin
                             // Send random number to AXI Stream
                   
-                              m_axis_tdata <= ad1_data;
+                              m_axis_tdata <= s00_axi_wdata;
                             
                            
                             m_axis_tvalid <= 1;
@@ -278,10 +250,32 @@
     
     
 
+//    wire drdy;
+
+
+//    ad1_spi #(
+//        .INCLUDE_DEBUG_INTERFACE(INCLUDE_DEBUG_INTERFACE),
+//        .CLOCKS_PER_BIT(AD1_CLOCKS_PER_BIT),
+//        .CLOCKS_BEFORE_DATA(AD1_CLOCKS_BEFORE_DATA),
+//        .CLOCKS_AFTER_DATA(AD1_CLOCKS_AFTER_DATA),
+//        .CLOCKS_BETWEEN_TRANSACTIONS(AD1_CLOCKS_BETWEEN_TRANSACTIONS)
+//    ) m_ad1_spi (
+//        .clk(m_axis_aclk),
+//        .rst(~m_axis_aresetn),
+//        .cs(ad1_cs),
+//        .sdin0(ad1_sdin0),
+//        .sdin1(ad1_sdin1),
+//        .sclk(ad1_sclk),
+//        .drdy(drdy),
+//        .dout0(ad1_data[15:00]),
+//        .dout1(ad1_data[31:16]),
+//        .led(led)
+//    );
+
+
+//    always@(posedge m_axis_aclk)
+//        if (drdy == 1)
+//            ad1_data_r <= ad1_data;
 
 	// User logic ends
-
-
-	// User logic ends
-
 	endmodule

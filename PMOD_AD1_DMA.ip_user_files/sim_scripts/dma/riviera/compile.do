@@ -143,8 +143,9 @@ vcom -work xil_defaultlib -93  -incr \
 vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" -l xilinx_vip -l xpm -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_18 -l processing_system7_vip_v1_0_20 -l xil_defaultlib -l generic_baseblocks_v2_1_2 -l axi_register_slice_v2_1_32 -l fifo_generator_v13_2_10 -l axi_data_fifo_v2_1_31 -l axi_crossbar_v2_1_33 -l lib_cdc_v1_0_3 -l proc_sys_reset_v5_0_15 -l lib_pkg_v1_0_4 -l lib_fifo_v1_0_19 -l lib_srl_fifo_v1_0_4 -l axi_datamover_v5_1_34 -l axi_sg_v4_1_18 -l axi_dma_v7_1_33 -l axi_protocol_converter_v2_1_32 -l axi_clock_converter_v2_1_31 -l blk_mem_gen_v8_4_8 -l axi_dwidth_converter_v2_1_32 \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/src/pmod_concat.v" \
 "../../../bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/sim/pmod_bridge_0.v" \
-"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/caa5/hdl/PmodAD1_v1_0_S00_AXI.v" \
-"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/caa5/hdl/PmodAD1_v1_0.v" \
+"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/dd00/hdl/PmodAD1_v1_0_S00_AXI.v" \
+"../../../bd/dma/ipshared/dd00/src/ad1_spi.v" \
+"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/dd00/hdl/PmodAD1_v1_0.v" \
 "../../../bd/dma/ip/dma_PmodAD1_0_2/sim/dma_PmodAD1_0_2.v" \
 
 vlog -work axi_protocol_converter_v2_1_32  -incr -v2k5 "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" -l xilinx_vip -l xpm -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_18 -l processing_system7_vip_v1_0_20 -l xil_defaultlib -l generic_baseblocks_v2_1_2 -l axi_register_slice_v2_1_32 -l fifo_generator_v13_2_10 -l axi_data_fifo_v2_1_31 -l axi_crossbar_v2_1_33 -l lib_cdc_v1_0_3 -l proc_sys_reset_v5_0_15 -l lib_pkg_v1_0_4 -l lib_fifo_v1_0_19 -l lib_srl_fifo_v1_0_4 -l axi_datamover_v5_1_34 -l axi_sg_v4_1_18 -l axi_dma_v7_1_33 -l axi_protocol_converter_v2_1_32 -l axi_clock_converter_v2_1_31 -l blk_mem_gen_v8_4_8 -l axi_dwidth_converter_v2_1_32 \

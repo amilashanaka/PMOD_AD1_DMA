@@ -20,6 +20,10 @@ vlib modelsim_lib/msim/lib_srl_fifo_v1_0_4
 vlib modelsim_lib/msim/axi_datamover_v5_1_34
 vlib modelsim_lib/msim/axi_sg_v4_1_18
 vlib modelsim_lib/msim/axi_dma_v7_1_33
+vlib modelsim_lib/msim/axis_infrastructure_v1_1_1
+vlib modelsim_lib/msim/axis_data_fifo_v2_0_14
+vlib modelsim_lib/msim/gigantic_mux
+vlib modelsim_lib/msim/axis_protocol_checker_v2_0_16
 vlib modelsim_lib/msim/axi_protocol_converter_v2_1_32
 vlib modelsim_lib/msim/axi_clock_converter_v2_1_31
 vlib modelsim_lib/msim/blk_mem_gen_v8_4_8
@@ -44,6 +48,10 @@ vmap lib_srl_fifo_v1_0_4 modelsim_lib/msim/lib_srl_fifo_v1_0_4
 vmap axi_datamover_v5_1_34 modelsim_lib/msim/axi_datamover_v5_1_34
 vmap axi_sg_v4_1_18 modelsim_lib/msim/axi_sg_v4_1_18
 vmap axi_dma_v7_1_33 modelsim_lib/msim/axi_dma_v7_1_33
+vmap axis_infrastructure_v1_1_1 modelsim_lib/msim/axis_infrastructure_v1_1_1
+vmap axis_data_fifo_v2_0_14 modelsim_lib/msim/axis_data_fifo_v2_0_14
+vmap gigantic_mux modelsim_lib/msim/gigantic_mux
+vmap axis_protocol_checker_v2_0_16 modelsim_lib/msim/axis_protocol_checker_v2_0_16
 vmap axi_protocol_converter_v2_1_32 modelsim_lib/msim/axi_protocol_converter_v2_1_32
 vmap axi_clock_converter_v2_1_31 modelsim_lib/msim/axi_clock_converter_v2_1_31
 vmap blk_mem_gen_v8_4_8 modelsim_lib/msim/blk_mem_gen_v8_4_8
@@ -60,7 +68,7 @@ vlog -work xilinx_vip  -incr -mfcu  -sv -L axi_vip_v1_1_18 -L processing_system7
 "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/hdl/clk_vip_if.sv" \
 "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/hdl/rst_vip_if.sv" \
 
-vlog -work xpm  -incr -mfcu  -sv -L axi_vip_v1_1_18 -L processing_system7_vip_v1_0_20 -L xilinx_vip "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work xpm  -incr -mfcu  -sv -L axi_vip_v1_1_18 -L processing_system7_vip_v1_0_20 -L xilinx_vip "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 "C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
 "C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
@@ -68,40 +76,40 @@ vlog -work xpm  -incr -mfcu  -sv -L axi_vip_v1_1_18 -L processing_system7_vip_v1
 vcom -work xpm  -93  \
 "C:/Xilinx/Vivado/2024.1/data/ip/xpm/xpm_VCOMP.vhd" \
 
-vlog -work axi_infrastructure_v1_1_0  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work axi_infrastructure_v1_1_0  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
 
-vlog -work axi_vip_v1_1_18  -incr -mfcu  -sv -L axi_vip_v1_1_18 -L processing_system7_vip_v1_0_20 -L xilinx_vip "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work axi_vip_v1_1_18  -incr -mfcu  -sv -L axi_vip_v1_1_18 -L processing_system7_vip_v1_0_20 -L xilinx_vip "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1f8d/hdl/axi_vip_v1_1_vl_rfs.sv" \
 
-vlog -work processing_system7_vip_v1_0_20  -incr -mfcu  -sv -L axi_vip_v1_1_18 -L processing_system7_vip_v1_0_20 -L xilinx_vip "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work processing_system7_vip_v1_0_20  -incr -mfcu  -sv -L axi_vip_v1_1_18 -L processing_system7_vip_v1_0_20 -L xilinx_vip "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl/processing_system7_vip_v1_0_vl_rfs.sv" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/dma/ip/dma_processing_system7_0_0/sim/dma_processing_system7_0_0.v" \
 
-vlog -work generic_baseblocks_v2_1_2  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work generic_baseblocks_v2_1_2  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
 
-vlog -work axi_register_slice_v2_1_32  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work axi_register_slice_v2_1_32  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/676c/hdl/axi_register_slice_v2_1_vl_rfs.v" \
 
-vlog -work fifo_generator_v13_2_10  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work fifo_generator_v13_2_10  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1443/simulation/fifo_generator_vlog_beh.v" \
 
 vcom -work fifo_generator_v13_2_10  -93  \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1443/hdl/fifo_generator_v13_2_rfs.vhd" \
 
-vlog -work fifo_generator_v13_2_10  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work fifo_generator_v13_2_10  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1443/hdl/fifo_generator_v13_2_rfs.v" \
 
-vlog -work axi_data_fifo_v2_1_31  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work axi_data_fifo_v2_1_31  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2ccb/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
 
-vlog -work axi_crossbar_v2_1_33  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work axi_crossbar_v2_1_33  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ef26/hdl/axi_crossbar_v2_1_vl_rfs.v" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/dma/ip/dma_xbar_1/sim/dma_xbar_1.v" \
 
 vcom -work lib_cdc_v1_0_3  -93  \
@@ -113,7 +121,7 @@ vcom -work proc_sys_reset_v5_0_15  -93  \
 vcom -work xil_defaultlib  -93  \
 "../../../bd/dma/ip/dma_rst_ps7_0_50M_0/sim/dma_rst_ps7_0_50M_0.vhd" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/dma/ip/dma_xbar_0/sim/dma_xbar_0.v" \
 
 vcom -work lib_pkg_v1_0_4  -93  \
@@ -137,30 +145,54 @@ vcom -work axi_dma_v7_1_33  -93  \
 vcom -work xil_defaultlib  -93  \
 "../../../bd/dma/ip/dma_axi_dma_0_1/sim/dma_axi_dma_0_1.vhd" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/src/pmod_concat.v" \
 "../../../bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/sim/pmod_bridge_0.v" \
-"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/dd00/hdl/PmodAD1_v1_0_S00_AXI.v" \
-"../../../bd/dma/ipshared/dd00/src/ad1_spi.v" \
-"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/dd00/hdl/PmodAD1_v1_0.v" \
+"../../../bd/dma/ipshared/3c08/src/ad1_spi.v" \
+"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/3c08/hdl/PmodAD1_v1_0.v" \
 "../../../bd/dma/ip/dma_PmodAD1_0_2/sim/dma_PmodAD1_0_2.v" \
 
-vlog -work axi_protocol_converter_v2_1_32  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work axis_infrastructure_v1_1_1  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
+
+vlog -work axis_data_fifo_v2_0_14  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/11b0/hdl/axis_data_fifo_v2_0_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../bd/dma/ip/dma_axis_data_fifo_0_0/sim/dma_axis_data_fifo_0_0.v" \
+"../../../bd/dma/ip/dma_system_ila_0_0/bd_0/sim/bd_ffff.v" \
+"../../../bd/dma/ip/dma_system_ila_0_0/bd_0/ip/ip_0/sim/bd_ffff_ila_lib_0.v" \
+
+vlog -work gigantic_mux  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/7215/hdl/gigantic_mux_v1_0_cntr.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../bd/dma/ip/dma_system_ila_0_0/bd_0/ip/ip_1/bd_ffff_g_inst_0_gigantic_mux.v" \
+"../../../bd/dma/ip/dma_system_ila_0_0/bd_0/ip/ip_1/sim/bd_ffff_g_inst_0.v" \
+
+vlog -work axis_protocol_checker_v2_0_16  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/fce8/hdl/axis_protocol_checker_v2_0_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../bd/dma/ip/dma_system_ila_0_0/bd_0/ip/ip_2/sim/bd_ffff_slot_0_apcs_0.v" \
+"../../../bd/dma/ip/dma_system_ila_0_0/sim/dma_system_ila_0_0.v" \
+
+vlog -work axi_protocol_converter_v2_1_32  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d59d/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/dma/ip/dma_auto_pc_0/sim/dma_auto_pc_0.v" \
 
-vlog -work axi_clock_converter_v2_1_31  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work axi_clock_converter_v2_1_31  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/c9b7/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
 
-vlog -work blk_mem_gen_v8_4_8  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work blk_mem_gen_v8_4_8  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/09bd/simulation/blk_mem_gen_v8_4.v" \
 
-vlog -work axi_dwidth_converter_v2_1_32  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work axi_dwidth_converter_v2_1_32  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8142/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/dma/ip/dma_auto_us_0/sim/dma_auto_us_0.v" \
 "../../../bd/dma/ip/dma_auto_pc_1/sim/dma_auto_pc_1.v" \
 "../../../bd/dma/ip/dma_auto_pc_2/sim/dma_auto_pc_2.v" \

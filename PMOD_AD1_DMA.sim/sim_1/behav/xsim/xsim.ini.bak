@@ -488,3 +488,4 @@ lut_buffer_v2_0_1=$RDI_DATADIR/xsim/ip/lut_buffer_v2_0_1
 mdm_v3_2=$RDI_DATADIR/xsim/ip/mdm_v3_2
 v_uhdsdi_vidgen_v1_0_3=$RDI_DATADIR/xsim/ip/v_uhdsdi_vidgen_v1_0_3
 xxv_ethernet_v4_1_12=$RDI_DATADIR/xsim/ip/xxv_ethernet_v4_1_12
+xil_defaultlib=xsim.dir/xil_defaultlib

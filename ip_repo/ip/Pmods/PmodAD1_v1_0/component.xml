@@ -562,7 +562,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>55bdaea8</spirit:value>
+            <spirit:value>4aeae03e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -581,7 +581,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>55bdaea8</spirit:value>
+            <spirit:value>4aeae03e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1486,7 +1486,7 @@
       <spirit:file>
         <spirit:name>hdl/PmodAD1_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_0096166b</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_a3f0947c</spirit:userFileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1716,11 +1716,11 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>PmodAD1_v1_0</xilinx:displayName>
-      <xilinx:coreRevision>66</xilinx:coreRevision>
+      <xilinx:coreRevision>67</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>natinst.com:user:PmodAD1:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2024-11-20T15:30:27Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2024-11-20T16:35:47Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="natinst.com:user:PmodAD1:1.0_ARCHIVE_LOCATION">C:/Users/arbrown/Documents/GitHub/vivado-library/ip/Pmods/PmodAD1_v1_0/PmodAD1_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:user:PmodAD1:1.0_ARCHIVE_LOCATION">C:/Users/arbrown/Documents/GitHub/vivado-library/ip/Pmods/PmodAD1_v1_0/PmodAD1_1.0</xilinx:tag>
@@ -1755,7 +1755,7 @@
       <xilinx:xilinxVersion>2024.1.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="6747b466"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="8914c54f"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="dab3ce70"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="259c900d"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="70827b8d"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6f4acbed"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="1a6ac8a0"/>

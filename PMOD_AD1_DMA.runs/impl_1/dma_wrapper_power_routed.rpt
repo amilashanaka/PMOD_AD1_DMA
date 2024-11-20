@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
-| Date             : Wed Nov 20 16:31:09 2024
+| Date             : Wed Nov 20 16:41:02 2024
 | Host             : DonGun running 64-bit major release  (build 9200)
 | Command          : report_power -file dma_wrapper_power_routed.rpt -pb dma_wrapper_power_summary_routed.pb -rpx dma_wrapper_power_routed.rpx
 | Design           : dma_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.395        |
+| Total On-Chip Power (W)  | 1.394        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.276        |
+| Dynamic (W)              | 1.275        |
 | Device Static (W)        | 0.119        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 68.9         |
@@ -52,21 +52,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.013 |        4 |       --- |             --- |
-| Slice Logic              |     0.002 |    14722 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     4547 |     14400 |           31.58 |
+| Clocks                   |     0.012 |        4 |       --- |             --- |
+| Slice Logic              |     0.002 |    14553 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     4540 |     14400 |           31.53 |
 |   CARRY4                 |    <0.001 |      164 |      4400 |            3.73 |
-|   Register               |    <0.001 |     7332 |     28800 |           25.46 |
-|   LUT as Shift Register  |    <0.001 |      359 |      6000 |            5.98 |
+|   Register               |    <0.001 |     7188 |     28800 |           24.96 |
 |   LUT as Distributed RAM |    <0.001 |       48 |      6000 |            0.80 |
 |   F7/F8 Muxes            |    <0.001 |       11 |     17600 |            0.06 |
-|   Others                 |     0.000 |      832 |       --- |             --- |
-| Signals                  |     0.003 |    10768 |       --- |             --- |
-| Block RAM                |     0.002 |      5.5 |        50 |           11.00 |
+|   LUT as Shift Register  |    <0.001 |      359 |      6000 |            5.98 |
+|   Others                 |     0.000 |      831 |       --- |             --- |
+| Signals                  |     0.003 |    10639 |       --- |             --- |
+| Block RAM                |     0.001 |      5.5 |        50 |           11.00 |
 | I/O                      |     0.001 |        8 |       100 |            8.00 |
 | PS7                      |     1.255 |        1 |       --- |             --- |
 | Static Power             |     0.119 |          |           |                 |
-| Total                    |     1.395 |          |           |                 |
+| Total                    |     1.394 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -153,7 +153,7 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| dma_wrapper              |     1.276 |
+| dma_wrapper              |     1.275 |
 |   dbg_hub                |     0.002 |
 |     inst                 |     0.002 |
 |       BSCANID.u_xsdbm_id |     0.002 |

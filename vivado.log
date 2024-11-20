@@ -3,10 +3,10 @@
 # SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
 # IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
 # SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-# Start of session at: Wed Nov 20 16:36:15 2024
-# Process ID: 7488
+# Start of session at: Wed Nov 20 16:49:49 2024
+# Process ID: 29216
 # Current directory: C:/Projects/ERN24004/Projects/PMOD_AD1_DMA
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36116 C:\Projects\ERN24004\Projects\PMOD_AD1_DMA\PMOD_AD1_DMA.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent37276 C:\Projects\ERN24004\Projects\PMOD_AD1_DMA\PMOD_AD1_DMA.xpr
 # Log file: C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/vivado.log
 # Journal file: C:/Projects/ERN24004/Projects/PMOD_AD1_DMA\vivado.jou
 # Running On        :DonGun
@@ -19,7 +19,7 @@
 # Host memory       :34124 MB
 # Swap memory       :2170 MB
 # Total Virtual     :36295 MB
-# Available Virtual :15570 MB
+# Available Virtual :16742 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.xpr
@@ -37,7 +37,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1873.746 ; gain = 603.121
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1878.398 ; gain = 622.387
 update_compile_order -fileset sources_1
 reset_run synth_1
 INFO: [Project 1-1161] Replacing file C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.srcs/utils_1/imports/synth_1/dma_wrapper.dcp with file C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dma_wrapper.dcp
@@ -81,11 +81,11 @@ Exporting to file c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/so
 Generated Hardware Definition File c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_system_ila_0_0/bd_0/synth/dma_system_ila_0_0.hwdef
 Exporting to file c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/hw_handoff/dma.hwh
 Generated Hardware Definition File c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/synth/dma.hwdef
-[Wed Nov 20 16:37:18 2024] Launched synth_1...
+[Wed Nov 20 16:50:41 2024] Launched synth_1...
 Run output will be captured here: C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/runme.log
-[Wed Nov 20 16:37:18 2024] Launched impl_1...
+[Wed Nov 20 16:50:41 2024] Launched impl_1...
 Run output will be captured here: C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 2220.621 ; gain = 320.113
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 2202.250 ; gain = 298.988
 open_bd_design {C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.srcs/sources_1/bd/dma/dma.bd}
 Reading block design file <C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.srcs/sources_1/bd/dma/dma.bd>...
 Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0

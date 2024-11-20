@@ -48,7 +48,7 @@
 
 
 // IP VLNV: digilentinc.com:IP:PmodAD1:1.0
-// IP Revision: 67
+// IP Revision: 68
 
 `timescale 1ns/1ps
 

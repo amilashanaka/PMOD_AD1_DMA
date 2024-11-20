@@ -4,7 +4,7 @@
     "xci_name": "dma_PmodAD1_0_2",
     "cell_name": "PmodAD1_0",
     "component_reference": "digilentinc.com:IP:PmodAD1:1.0",
-    "ip_revision": "67",
+    "ip_revision": "68",
     "gen_directory": "../../../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2",
     "parameters": {
       "component_parameters": {
@@ -54,7 +54,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "67" } ],
+        "IPREVISION": [ { "value": "68" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

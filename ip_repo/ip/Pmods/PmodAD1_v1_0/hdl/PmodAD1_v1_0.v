@@ -112,45 +112,7 @@
   assign random_number = 2'b11;
 	
 	
-// Instantiation of Axi Bus Interface S00_AXI
-//	PmodAD1_v1_0_S00_AXI # (
-//        .INCLUDE_DEBUG_INTERFACE(INCLUDE_DEBUG_INTERFACE),
-//		.C_S_AXI_DATA_WIDTH(C_S00_AXI_DATA_WIDTH),
-//		.C_S_AXI_ADDR_WIDTH(C_S00_AXI_ADDR_WIDTH),
-//        .AD1_CLOCKS_PER_BIT(AD1_CLOCKS_PER_BIT),//1 bit per 200ns
-//        .AD1_CLOCKS_BEFORE_DATA(AD1_CLOCKS_BEFORE_DATA),//600ns
-//        .AD1_CLOCKS_AFTER_DATA(AD1_CLOCKS_AFTER_DATA),//5us
-//        .AD1_CLOCKS_BETWEEN_TRANSACTIONS(AD1_CLOCKS_BETWEEN_TRANSACTIONS)//4us
-//	) PmodAD1_v1_0_S00_AXI_inst (
-//        .ad1_cs     (ad1_cs   ),
-//        .ad1_sdin0  (ad1_sdin0),
-//        .ad1_sdin1  (ad1_sdin1),
-//        .ad1_sclk   (ad1_sclk ),
-//        .led(led),
-            
-//		.S_AXI_ACLK(s00_axi_aclk),
-//		.S_AXI_ARESETN(s00_axi_aresetn),
-//		.S_AXI_AWADDR(s00_axi_awaddr),
-//		.S_AXI_AWPROT(s00_axi_awprot),
-//		.S_AXI_AWVALID(s00_axi_awvalid),
-//		.S_AXI_AWREADY(s00_axi_awready),
-//		.S_AXI_WDATA(s00_axi_wdata),
-//		.S_AXI_WSTRB(s00_axi_wstrb),
-//		.S_AXI_WVALID(s00_axi_wvalid),
-//		.S_AXI_WREADY(s00_axi_wready),
-//		.S_AXI_BRESP(s00_axi_bresp),
-//		.S_AXI_BVALID(s00_axi_bvalid),
-//		.S_AXI_BREADY(s00_axi_bready),
-//		.S_AXI_ARADDR(s00_axi_araddr),
-//		.S_AXI_ARPROT(s00_axi_arprot),
-//		.S_AXI_ARVALID(s00_axi_arvalid),
-//		.S_AXI_ARREADY(s00_axi_arready),
-//		.S_AXI_RDATA(s00_axi_rdata),
-//		.S_AXI_RRESP(s00_axi_rresp),
-//		.S_AXI_RVALID(s00_axi_rvalid),
-//		.S_AXI_RREADY(s00_axi_rready)
-//	);
-	
+ 
  
 	
     pmod_bridge_0 PmodAD1_pmod_bridge_0_0
@@ -215,7 +177,7 @@
 
                 GENERATE: begin
                     if (sample_count < TOTAL_SAMPLES) begin
-                        if (m_axis_tready & s00_axi_awready ) begin
+                        if (m_axis_tready  ) begin
                             // Send random number to AXI Stream
                   
                               m_axis_tdata <= ad1_data;

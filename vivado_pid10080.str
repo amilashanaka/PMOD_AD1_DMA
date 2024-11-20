@@ -10343,3 +10343,90 @@ selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regener
 // TclEventType: RSB_LAYOUT_STATE
 // TclEventType: RSB_REGENERATE_LAYOUT
 // Tcl Message: regenerate_bd_layout 
+// Elapsed time: 57 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /PmodAD1_0]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 977, 299, 1224, 530, false, false, false, true, false); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /PmodAD1_0]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 441 MB. Current time: 11/19/24, 5:21:50 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 440 MB. Current time: 11/19/24, 5:51:51 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 439 MB. Current time: 11/19/24, 6:21:51 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/19/24, 6:51:51 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/19/24, 7:21:52 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/19/24, 7:51:52 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/19/24, 8:21:53 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/19/24, 8:51:53 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/19/24, 9:21:53 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/19/24, 9:51:54 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/19/24, 10:21:54 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/19/24, 10:51:55 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/19/24, 11:21:55 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/19/24, 11:51:55 PM GMT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1521 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1519 ms. Increasing delay to 4557 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 439 MB. Current time: 11/20/24, 12:21:56 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 12:51:56 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 1:21:56 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 1:51:56 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 439 MB. Current time: 11/20/24, 2:21:56 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 2:51:57 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 439 MB. Current time: 11/20/24, 3:21:57 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 3:51:57 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 4:21:57 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 4:51:58 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 5:21:58 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 5:51:58 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 6:21:59 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 6:51:59 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 7:21:59 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 439 MB. Current time: 11/20/24, 7:52:00 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,137 MB. GUI used memory: 438 MB. Current time: 11/20/24, 8:22:00 AM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,178 MB. GUI used memory: 439 MB. Current time: 11/20/24, 8:29:05 AM GMT
+// Elapsed time: 57210 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // am (PAResourceItoN.MainMenuMgr_PROJECT, Project)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // am (PAResourceItoN.MainMenuMgr_CHECKPOINT, Checkpoint)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // am (PAResourceItoN.MainMenuMgr_IP, IP)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // am (PAResourceItoN.MainMenuMgr_TEXT_EDITOR, Text Editor)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // am (PAResourceItoN.MainMenuMgr_IMPORT, Import)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // am (PAResourceItoN.MainMenuMgr_EXPORT, Export)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // am (PAResourceItoN.MainMenuMgr_EXPORT, Export)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BD_TCL, "Export Block Design..."); // ap (PAResourceCommand.PACommandNames_EXPORT_BD_TCL, export_rsb_tcl_script_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BD_TCL
+setText(PAResourceEtoH.ExportRSBTclScriptDialog_SPECIFY_FILE, "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/pynq/dma.tcl"); // aj (PAResourceEtoH.ExportRSBTclScriptDialog_SPECIFY_FILE)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Export Block Design"); // a (RDIResource.BaseDialog_OK)
+// 'aD' command handler elapsed time: 10 seconds
+// Tcl Command: 'write_bd_tcl -force C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/pynq/dma.tcl'
+dismissDialog("Export Block Design"); // bA (dialog109)
+// Tcl Message: write_bd_tcl -force C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/pynq/dma.tcl 
+// Tcl Message: INFO: [BD 5-148] Tcl file written out <C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/pynq/dma.tcl>.  
+// Elapsed time: 20 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // am (PAResourceItoN.MainMenuMgr_PROJECT, Project)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // am (PAResourceItoN.MainMenuMgr_IP, IP)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // am (PAResourceItoN.MainMenuMgr_TEXT_EDITOR, Text Editor)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // am (PAResourceItoN.MainMenuMgr_IMPORT, Import)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // am (PAResourceItoN.MainMenuMgr_EXPORT, Export)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // am (PAResourceItoN.MainMenuMgr_EXPORT, Export)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, "Export Bitstream File..."); // ap (PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES, export_bitstream_file_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_BITSTREAM_FILES
+setFileChooser("C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/pynq/dma");
+// 'a' command handler elapsed time: 7 seconds
+// Tcl Message: file copy -force C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/impl_1/dma_wrapper.bit C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/pynq/dma.bit 
+selectButton("OptionPane.button", "OK", "Bitstream Export Successful"); // JButton (OptionPane.button)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton("OptionPane.button", "OK", "Generate Bitstream"); // JButton (OptionPane.button)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Nov 20 08:52:55 2024] Launched impl_1... Run output will be captured here: C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE

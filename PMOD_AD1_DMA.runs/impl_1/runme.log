@@ -841,3 +841,8 @@ INFO: [Common 17-83] Releasing license: Implementation
 write_bitstream completed successfully
 write_bitstream: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2890.043 ; gain = 422.102
 INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 16:54:04 2024...
+
+*** Running vivado
+    with args -log dma_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source dma_wrapper.tcl -notrace
+
+

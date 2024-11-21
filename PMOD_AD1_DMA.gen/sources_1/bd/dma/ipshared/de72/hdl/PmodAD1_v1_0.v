@@ -186,7 +186,7 @@ module PmodAD1_v1_0 #
                 STREAMING: begin
                     if (stream_index < TOTAL_SAMPLES) begin
                         if (m_axis_tready) begin
-                            m_axis_tdata <= stream_index;// buffer[stream_index];
+                            m_axis_tdata <=  buffer[stream_index];
                             m_axis_tvalid <= 1;
                             stream_index <= stream_index + 1;
 

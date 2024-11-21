@@ -75,6 +75,8 @@ module PmodAD1_v1_0 #
     input wire m_axis_tready
 );
 
+ 
+
     // Signals
     wire ad1_cs, ad1_sdin0, ad1_sdin1, ad1_sclk;
     reg [DATA_WIDTH-1:0] buffer [0:TOTAL_SAMPLES-1];  // Sample buffer
@@ -169,20 +171,22 @@ module PmodAD1_v1_0 #
                 end
 
                 BUFFERING: begin
-                    if (drdy) begin
+                    if (drdy == 1) begin
                         buffer[sample_count] <= ad1_data;
                         sample_count <= sample_count + 1;
-
+                        
                         if (sample_count == TOTAL_SAMPLES - 1) begin
                             state <= STREAMING;
                         end
+                    end else begin 
+                     state <= BUFFERING;
                     end
                 end
 
                 STREAMING: begin
                     if (stream_index < TOTAL_SAMPLES) begin
                         if (m_axis_tready) begin
-                            m_axis_tdata <= buffer[stream_index];
+                            m_axis_tdata <= stream_index;// buffer[stream_index];
                             m_axis_tvalid <= 1;
                             stream_index <= stream_index + 1;
 

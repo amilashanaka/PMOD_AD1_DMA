@@ -8,14 +8,16 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_
 INFO: [VRFC 10-311] analyzing module pmod_concat
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.ip_user_files/bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/sim/pmod_bridge_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pmod_bridge_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.ip_user_files/bd/dma/ipshared/e68c/src/ad1_spi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.ip_user_files/bd/dma/ipshared/569a/src/ad1_spi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ad1_spi
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/e68c/hdl/PmodAD1_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/569a/hdl/PmodAD1_v1_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PmodAD1_v1_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.ip_user_files/bd/dma/ip/dma_PmodAD1_0_2/sim/dma_PmodAD1_0_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dma_PmodAD1_0_2
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.ip_user_files/bd/dma/ip/dma_axis_data_fifo_0_0/sim/dma_axis_data_fifo_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dma_axis_data_fifo_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.ip_user_files/bd/dma/ip/dma_system_ila_0_0/bd_0/sim/bd_ffff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ffff
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.ip_user_files/bd/dma/ip/dma_system_ila_0_0/bd_0/ip/ip_0/sim/bd_ffff_ila_lib_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bd_ffff_ila_lib_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.ip_user_files/bd/dma/ip/dma_system_ila_0_0/bd_0/ip/ip_1/bd_ffff_g_inst_0_gigantic_mux.v" into library xil_defaultlib
@@ -24,8 +26,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_
 INFO: [VRFC 10-311] analyzing module bd_ffff_g_inst_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.ip_user_files/bd/dma/ip/dma_system_ila_0_0/bd_0/ip/ip_2/sim/bd_ffff_slot_0_apcs_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bd_ffff_slot_0_apcs_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.ip_user_files/bd/dma/ip/dma_system_ila_0_0/bd_0/sim/bd_ffff.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module bd_ffff
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.ip_user_files/bd/dma/ip/dma_system_ila_0_0/sim/dma_system_ila_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dma_system_ila_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.ip_user_files/bd/dma/ip/dma_auto_pc_0/sim/dma_auto_pc_0.v" into library xil_defaultlib

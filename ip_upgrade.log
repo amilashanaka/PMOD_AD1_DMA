@@ -1,6 +1,111 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Thu Nov 21 15:53:23 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dma_PmodAD1_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of dma_PmodAD1_0_2 (digilentinc.com:IP:PmodAD1:1.0) from (Rev. 70) to (Rev. 71)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Thu Nov 21 09:24:28 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dma_PmodAD1_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the update of dma_PmodAD1_0_2 (digilentinc.com:IP:PmodAD1:1.0 (Rev. 70)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Thu Nov 21 09:17:33 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dma_PmodAD1_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the update of dma_PmodAD1_0_2 (digilentinc.com:IP:PmodAD1:1.0 (Rev. 70)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Thu Nov 21 09:03:51 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dma_PmodAD1_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of dma_PmodAD1_0_2 (digilentinc.com:IP:PmodAD1:1.0) from (Rev. 69) to (Rev. 70)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Thu Nov 21 08:41:00 2024
+| Host         : DonGun running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg400-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'dma_PmodAD1_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of dma_PmodAD1_0_2 (digilentinc.com:IP:PmodAD1:1.0) from (Rev. 68) to (Rev. 69)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
 | Date         : Wed Nov 20 16:49:26 2024
 | Host         : DonGun running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

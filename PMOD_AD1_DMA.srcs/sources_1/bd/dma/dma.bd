@@ -2510,11 +2510,14 @@
       },
       "PmodAD1_0": {
         "vlnv": "digilentinc.com:IP:PmodAD1:1.0",
-        "ip_revision": "74",
+        "ip_revision": "75",
         "xci_name": "dma_PmodAD1_0_2",
         "xci_path": "ip\\dma_PmodAD1_0_2\\dma_PmodAD1_0_2.xci",
         "inst_hier_path": "PmodAD1_0",
         "parameters": {
+          "ADC_MAX_COUNT": {
+            "value": "50"
+          },
           "PMOD": {
             "value": "ja"
           },

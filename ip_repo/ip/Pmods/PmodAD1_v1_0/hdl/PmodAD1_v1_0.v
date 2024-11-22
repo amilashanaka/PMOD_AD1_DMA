@@ -12,7 +12,7 @@ module PmodAD1_v1_0 #(
     parameter integer C_S00_AXI_ADDR_WIDTH = 4,
     parameter DATA_WIDTH = 32,  // Width of data samples
     parameter TOTAL_SAMPLES = 1024,  // Number of samples to collect
-    parameter ADC_MAX_COUNT = 50
+    parameter ADC_MAX_COUNT = 10
 ) (
     // Pmod Interface Ports
     input Pmod_out_pin10_i,

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: digilentinc.com:IP:PmodAD1:1.0
-// IP Revision: 74
+// IP Revision: 75
 
 `timescale 1ns/1ps
 
@@ -232,7 +232,7 @@ input wire m_axis_tready;
     .C_M_AXIS_START_COUNT(32),
     .DATA_WIDTH(32),
     .TOTAL_SAMPLES(1024),
-    .ADC_MAX_COUNT(50)
+    .ADC_MAX_COUNT(10)
   ) inst (
     .Pmod_out_pin10_i(Pmod_out_pin10_i),
     .Pmod_out_pin10_o(Pmod_out_pin10_o),

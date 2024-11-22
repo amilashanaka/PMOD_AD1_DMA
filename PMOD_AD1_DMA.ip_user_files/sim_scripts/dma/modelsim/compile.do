@@ -148,8 +148,8 @@ vcom -work xil_defaultlib  -93  \
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/src/pmod_concat.v" \
 "../../../bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/sim/pmod_bridge_0.v" \
-"../../../bd/dma/ipshared/74b0/src/ad1_spi.v" \
-"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/74b0/hdl/PmodAD1_v1_0.v" \
+"../../../bd/dma/ipshared/d149/src/ad1_spi.v" \
+"../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v" \
 "../../../bd/dma/ip/dma_PmodAD1_0_2/sim/dma_PmodAD1_0_2.v" \
 
 vlog -work axis_infrastructure_v1_1_1  -incr -mfcu  "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/ec67/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d47c/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/434f/hdl" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/814a/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/1017/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog" "+incdir+../../../../PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/2340/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \

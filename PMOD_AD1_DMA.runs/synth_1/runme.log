@@ -8,12 +8,12 @@
   **** SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
   **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
   **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-  **** Start of session at: Thu Nov 21 16:18:33 2024
+  **** Start of session at: Fri Nov 22 08:43:34 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source dma_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 691.371 ; gain = 239.102
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 691.496 ; gain = 238.188
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
@@ -30,9 +30,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8592
+INFO: [Synth 8-7075] Helper process launched with PID 21700
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1633.762 ; gain = 447.703
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1634.230 ; gain = 449.445
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog/xsdbm_v3_0_2_bs_core_ext.vh:30]
 INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8745/hdl/verilog/xsdbm_v3_0_2_bs_core_ext.vh:32]
@@ -138,15 +138,15 @@ INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further insta
 INFO: [Synth 8-6157] synthesizing module 'dma_wrapper' [C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/hdl/dma_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'dma' [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/synth/dma.v:13]
 INFO: [Synth 8-6157] synthesizing module 'dma_PmodAD1_0_2' [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/synth/dma_PmodAD1_0_2.v:53]
-INFO: [Synth 8-6157] synthesizing module 'PmodAD1_v1_0' [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/hdl/PmodAD1_v1_0.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PmodAD1_v1_0' [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v:3]
 INFO: [Synth 8-6157] synthesizing module 'pmod_bridge_0' [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/synth/pmod_bridge_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'pmod_concat' [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/src/pmod_concat.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'pmod_concat' (0#1) [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/src/pmod_concat.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'pmod_bridge_0' (0#1) [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/synth/pmod_bridge_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'ad1_spi' [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/src/ad1_spi.v:18]
-INFO: [Synth 8-6155] done synthesizing module 'ad1_spi' (0#1) [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/src/ad1_spi.v:18]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/hdl/PmodAD1_v1_0.v:164]
-INFO: [Synth 8-6155] done synthesizing module 'PmodAD1_v1_0' (0#1) [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/hdl/PmodAD1_v1_0.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ad1_spi' [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/src/ad1_spi.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'ad1_spi' (0#1) [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/src/ad1_spi.v:18]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'PmodAD1_v1_0' (0#1) [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'dma_PmodAD1_0_2' (0#1) [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/synth/dma_PmodAD1_0_2.v:53]
 WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'dma_PmodAD1_0_2' is unconnected for instance 'PmodAD1_0' [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/synth/dma.v:365]
 WARNING: [Synth 8-7023] instance 'PmodAD1_0' of module 'dma_PmodAD1_0_2' has 52 connections declared, but only 51 given [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/synth/dma.v:365]
@@ -761,16 +761,16 @@ WARNING: [Synth 8-3848] Net in_top_i2c_gpio_bus_I in module/entity pmod_concat d
 WARNING: [Synth 8-3848] Net in_bottom_bus_I in module/entity pmod_concat does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/src/pmod_concat.v:94]
 WARNING: [Synth 8-3848] Net in_bottom_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/src/pmod_concat.v:97]
 WARNING: [Synth 8-3848] Net in_bottom_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_PmodAD1_0_2/src/pmod_bridge_0/src/pmod_concat.v:100]
-WARNING: [Synth 8-3848] Net led in module/entity ad1_spi does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/src/ad1_spi.v:50]
-WARNING: [Synth 8-3848] Net s00_axi_awready in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/hdl/PmodAD1_v1_0.v:51]
-WARNING: [Synth 8-3848] Net s00_axi_wready in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/hdl/PmodAD1_v1_0.v:55]
-WARNING: [Synth 8-3848] Net s00_axi_bresp in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/hdl/PmodAD1_v1_0.v:56]
-WARNING: [Synth 8-3848] Net s00_axi_bvalid in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/hdl/PmodAD1_v1_0.v:57]
-WARNING: [Synth 8-3848] Net s00_axi_arready in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/hdl/PmodAD1_v1_0.v:62]
-WARNING: [Synth 8-3848] Net s00_axi_rdata in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/hdl/PmodAD1_v1_0.v:63]
-WARNING: [Synth 8-3848] Net s00_axi_rresp in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/hdl/PmodAD1_v1_0.v:64]
-WARNING: [Synth 8-3848] Net s00_axi_rvalid in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/hdl/PmodAD1_v1_0.v:65]
-WARNING: [Synth 8-3848] Net m_axis_tstrb in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/de72/hdl/PmodAD1_v1_0.v:73]
+WARNING: [Synth 8-3848] Net led in module/entity ad1_spi does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/src/ad1_spi.v:50]
+WARNING: [Synth 8-3848] Net s00_axi_awready in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v:50]
+WARNING: [Synth 8-3848] Net s00_axi_wready in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v:54]
+WARNING: [Synth 8-3848] Net s00_axi_bresp in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v:55]
+WARNING: [Synth 8-3848] Net s00_axi_bvalid in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v:56]
+WARNING: [Synth 8-3848] Net s00_axi_arready in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v:61]
+WARNING: [Synth 8-3848] Net s00_axi_rdata in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v:62]
+WARNING: [Synth 8-3848] Net s00_axi_rresp in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v:63]
+WARNING: [Synth 8-3848] Net s00_axi_rvalid in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v:64]
+WARNING: [Synth 8-3848] Net m_axis_tstrb in module/entity PmodAD1_v1_0 does not have driver. [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/d149/hdl/PmodAD1_v1_0.v:72]
 WARNING: [Synth 8-6014] Unused sequential element awaddr_reg was removed.  [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/3e1f/hdl/axi_dma_v7_1_vh_rfs.vhd:2151]
 WARNING: [Synth 8-6014] Unused sequential element wdata_reg was removed.  [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/3e1f/hdl/axi_dma_v7_1_vh_rfs.vhd:2153]
 WARNING: [Synth 8-6014] Unused sequential element GEN_SYNC_WRITE.axi2ip_wrdata_i_reg was removed.  [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/3e1f/hdl/axi_dma_v7_1_vh_rfs.vhd:2306]
@@ -1052,18 +1052,18 @@ WARNING: [Synth 8-7129] Port DOUTA_I[29] in module blk_mem_gen_v8_4_8_blk_mem_ou
 WARNING: [Synth 8-7129] Port DOUTA_I[28] in module blk_mem_gen_v8_4_8_blk_mem_output_block is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 2289.641 ; gain = 1103.582
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 2290.758 ; gain = 1105.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 2289.641 ; gain = 1103.582
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 2290.758 ; gain = 1105.973
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 2289.641 ; gain = 1103.582
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 2290.758 ; gain = 1105.973
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.445 . Memory (MB): peak = 2289.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.436 . Memory (MB): peak = 2290.758 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 128 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1114,7 +1114,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/dma_wrapper_
 INFO: [Project 1-1714] 11 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2392.574 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2393.887 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 102 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 60 instances
@@ -1123,18 +1123,18 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.171 . Memory (MB): peak = 2392.574 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 2393.887 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:41 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:41 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1143,13 +1143,13 @@ Applied set_property mark_debug = true for dma_i/system_ila_0/inst/slot_0_apcs/i
 Applied set_property mark_debug = true for dma_i/system_ila_0/inst/slot_0_apcs/inst/pc_status_i. (constraint file  c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_system_ila_0_0/bd_0/ip/ip_2/bd_ffff_slot_0_apcs_0.xdc, line 2).
 Applied set_property mark_debug = true for dma_i/system_ila_0/inst/slot_0_apcs/inst/pc_status0[31]. (constraint file  c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ip/dma_system_ila_0_0/bd_0/ip/ip_2/bd_ffff_slot_0_apcs_0.xdc, line 2).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/processing_system7_0/inst. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 67).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/rst_ps7_0_50M/U0. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 72).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/axi_mem_intercon/s00_couplers/auto_us/inst. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 78).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/axi_dma_0/U0. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 87).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/PmodAD1_0/inst/PmodAD1_pmod_bridge_0_0/inst. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 93).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/PmodAD1_0/inst. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 98).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/system_ila_0/inst/ila_lib/inst. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 101).
-Applied set_property KEEP_HIERARCHY = SOFT for dma_i/system_ila_0/inst/slot_0_apcs/inst. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 109).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/rst_ps7_0_50M/U0. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 70).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/axi_dma_0/U0. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 76).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/PmodAD1_0/inst/PmodAD1_pmod_bridge_0_0/inst. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 82).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/PmodAD1_0/inst. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 87).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/system_ila_0/inst/ila_lib/inst. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 90).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/system_ila_0/inst/slot_0_apcs/inst. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 98).
+Applied set_property KEEP_HIERARCHY = SOFT for dma_i/axi_mem_intercon/s00_couplers/auto_us/inst. (constraint file  C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dont_touch.xdc, line 107).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/processing_system7_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for dma_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
@@ -1190,7 +1190,7 @@ WARNING: set_property KEEP could not find object (constraint file  auto generate
 WARNING: set_property KEEP could not find object (constraint file  auto generated constraint, line ).
 WARNING: set_property KEEP could not find object (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:41 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ad1_spi'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'PmodAD1_v1_0'
@@ -1475,7 +1475,7 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in m
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_2_generic_memrd'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:44 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:46 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1537,7 +1537,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:01:02 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:01:03 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1545,7 +1545,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:01:08 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:01:08 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1553,14 +1553,14 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:01:13 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:01:13 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance dma_i/PmodAD1_0/inst/buffer_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:01:15 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:01:16 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1721,37 +1721,37 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.gen/sources_1/bd/dma/ipshared/8142/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:6605]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:01:18 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:01:18 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:01:18 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:01:18 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:01:19 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:01:19 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:01:19 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:01:19 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:01:19 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:01:19 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:01:19 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:01:19 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1772,11 +1772,11 @@ Report Cell Usage:
 |3     |CARRY4   |   139|
 |4     |CFGLUT5  |    69|
 |5     |LUT1     |   263|
-|6     |LUT2     |   663|
-|7     |LUT3     |  1050|
-|8     |LUT4     |   785|
-|9     |LUT5     |   726|
-|10    |LUT6     |  1224|
+|6     |LUT2     |   664|
+|7     |LUT3     |  1051|
+|8     |LUT4     |   793|
+|9     |LUT5     |   729|
+|10    |LUT6     |  1229|
 |11    |MUXF7    |     8|
 |12    |PS7      |     1|
 |13    |RAM32M   |     6|
@@ -1789,24 +1789,24 @@ Report Cell Usage:
 |24    |FDCE     |   138|
 |25    |FDPE     |    66|
 |26    |FDR      |    12|
-|27    |FDRE     |  5252|
+|27    |FDRE     |  5262|
 |28    |FDSE     |   140|
 |29    |IOBUF    |     8|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:01:19 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:01:19 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 8022 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:01:13 . Memory (MB): peak = 2392.574 ; gain = 1103.582
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:01:19 . Memory (MB): peak = 2392.574 ; gain = 1206.516
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:01:13 . Memory (MB): peak = 2393.887 ; gain = 1105.973
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:01:19 . Memory (MB): peak = 2393.887 ; gain = 1209.102
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.197 . Memory (MB): peak = 2392.574 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.214 . Memory (MB): peak = 2393.887 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 250 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Chipscope 16-324] Core: dma_i/system_ila_0/inst/ila_lib UUID: 2c170894-4832-55a3-b4de-1224ecca0306 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2392.574 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2393.887 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 96 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 60 instances
@@ -1816,12 +1816,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete | Checksum: 391b7bee
+Synth Design complete | Checksum: e9d19dd5
 INFO: [Common 17-83] Releasing license: Synthesis
 675 Infos, 522 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:01:25 . Memory (MB): peak = 2392.574 ; gain = 1596.734
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2392.574 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:01:28 . Memory (MB): peak = 2393.887 ; gain = 1598.730
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2393.887 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Projects/ERN24004/Projects/PMOD_AD1_DMA/PMOD_AD1_DMA.runs/synth_1/dma_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file dma_wrapper_utilization_synth.rpt -pb dma_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 16:20:21 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 22 08:45:27 2024...

@@ -33,3 +33,5 @@ update_compile_order -fileset sources_1
 current_project PMOD_AD1_DMA
 regenerate_bd_layout
 current_project PmodAD1_v1_0_project
+current_project PMOD_AD1_DMA
+close_project
